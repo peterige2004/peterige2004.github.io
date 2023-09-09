@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const currentDayOfTheWeek = document.querySelector('currentDayOfTheWeek');
-    const currentUTCTime = document.querySelector('currentUTCTime');
+    const currentDayOfTheWeek = document.getElementById('currentDayOfTheWeek');
+    const currentUTCTime = document.getElementById('currentUTCTime');
 
     const now = new Date();
 

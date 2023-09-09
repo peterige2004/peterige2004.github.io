@@ -4,7 +4,7 @@ const currentUTCTime = document.getElementById('currentUTCTime');
 const now = new Date();
 
 // Display the current day of the week
-currentDayOfTheWeek.innerHTML = `currentDayofTheWeek: ${now.toLocaleDateString('en-US', { weekday: 'long' })}`;
+currentDayOfTheWeek.innerHTML = `Current Day of the Week: ${now.toLocaleDateString('en-US', { weekday: 'long' })}`;
 
 // Display the current time in milliseconds
 const currentTimeInMilliseconds = now.getTime();

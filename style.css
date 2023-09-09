@@ -59,3 +59,15 @@ a:active {
     transform: scale(0.95); /* Slight scale-down on click */
 }
 
+@media (max-width: 768px) {
+    section {
+        flex-direction: column; /* Stack elements vertically */
+        height: auto; /* Adjust height to content */
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%; /* Make the image responsive within its container */
+    }
+}
+

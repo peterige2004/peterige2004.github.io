@@ -5,9 +5,9 @@ document.addEventListener("DOMContentLoaded", function() {
     const now = new Date();
 
     // Display the current day of the week
-    currentDayOfTheWeek.textContent = now.toLocaleDateString('en-US', { weekday: 'long' });
+    currentDayOfTheWeek.innerHTML = now.toLocaleDateString('en-US', { weekday: 'long' });
 
     // Display the current time in milliseconds
     const currentTimeInMilliseconds = now.getTime();
-    currentUTCTime.textContent = `Current Time in Milliseconds: ${currentTimeInMilliseconds}`;
+    currentUTCTime.innerHTML = `Current Time in Milliseconds: ${currentTimeInMilliseconds}`;
 });

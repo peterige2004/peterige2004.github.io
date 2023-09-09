@@ -1,11 +1,11 @@
-const currentDayOfTheWeek = document.getElementById('currentDayofTheWeek');
-const currentUTCTime = document.getElementById('currentUTCTime');
+const currentDayOfTheWeek = document.querySelector('[data-testid="currentDayofTheWeek"]');
+const currentUTCTime = document.querySelector('[data-testid="currentUTCTime"]');
 
 const now = new Date();
 
 // Display the current day of the week
-currentDayOfTheWeek.innerHTML = `Current Day of the Week: ${now.toLocaleDateString('en-US', { weekday: 'long' })}`;
+currentDayOfTheWeek.textContent = `Current Day of the Week: ${now.toLocaleDateString('en-US', { weekday: 'long' })}`;
 
 // Display the current time in milliseconds
 const currentTimeInMilliseconds = now.getTime();
-currentUTCTime.innerHTML = `Current Time in Milliseconds: ${currentTimeInMilliseconds}`;
+currentUTCTime.textContent = `Current Time in Milliseconds: ${currentTimeInMilliseconds}`;
